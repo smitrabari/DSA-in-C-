@@ -18,7 +18,7 @@ void Digit_Extraction(int n)
 int main()
 {
 	int n;
-	cout<<"Enter the Number - ";
+	cout<<"Enter Number - ";
 	cin>>n;
 	Digit_Extraction(n);
 	return 0;
