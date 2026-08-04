@@ -3,16 +3,28 @@ using namespace std;
 
 void p1(int n)
 {
-	for(int i = 1;i <= 2*n - 1;i++)
+	for(int i = 1;i <= n;i++)
 	{
-		int s = i;
-		if(n<i)
+		int s;
+		if(i%2==0)
 		{
-			s = 2*n-i;
+			s = 1;
 		}
-		for(int j = 1;j <= s;j++)
+		else
 		{
-			cout<<"* ";
+			s = 0;
+		}
+		for(int j = 1;j <= i;j++)
+		{
+			if(s==1)
+			{
+				s--;
+			}
+			else
+			{
+				s++;
+			}
+			cout<<s<<" ";
 		}
 		cout<<endl;
 	}
@@ -20,6 +32,6 @@ void p1(int n)
 
 int main()
 {
-	p1(3);
+	p1(5);
 	return 0;
 }
