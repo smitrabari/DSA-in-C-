@@ -3,10 +3,10 @@ using namespace std;
 
 void smit(int n)
 {
-	for(int i = 1;i<=2*n-1;i++)
+	for(int i = 1;i<=2*n-1;i++) //no. of rows
 	{
-		int s = i;
-		if(i>n)
+		int s = i; //temp values
+		if(i>n) //condition if row > n then 2n-i
 		{
 			s = 2*n-i;
 		}
