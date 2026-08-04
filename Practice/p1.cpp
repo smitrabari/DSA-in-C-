@@ -5,26 +5,23 @@ void p1(int n)
 {
 	for(int i = 1;i <= n;i++)
 	{
-		int s;
-		if(i%2==0)
+		int r = i;
+		for(int j = 1;j <= i;j++)
 		{
-			s = 1;
+			cout<<j;
 		}
-		else
+		for(int j = 1;j <= n-i;j++) //space
 		{
-			s = 0;
+			cout<<" ";
+		}
+		for(int j = 1;j <= n-i;j++) //space
+		{
+			cout<<" ";
 		}
 		for(int j = 1;j <= i;j++)
 		{
-			if(s==1)
-			{
-				s--;
-			}
-			else
-			{
-				s++;
-			}
-			cout<<s<<" ";
+			cout<<r;
+			r--;
 		}
 		cout<<endl;
 	}
@@ -32,6 +29,6 @@ void p1(int n)
 
 int main()
 {
-	p1(5);
+	p1(4);
 	return 0;
 }
