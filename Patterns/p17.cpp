@@ -10,8 +10,8 @@ void smit(int n)
 			cout<<" ";
 		}
 
-		char a = 'A';
-		int breakpoint= (2*i-1)/2;
+		char a = 'A'; //starting point
+		int breakpoint= (2*i-1)/2; //position of the center elements
 		for(int j = 1 ; j <= 2*i-1 ; j++)
 		{
 			cout<<a;
