@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void selection_sort(int arr[],int n) //function declaration
+void selection_sort(int arr[],int n) //function declaration!
 {
 	for(int i = 0;i < n - 1;i++) 
 	{
