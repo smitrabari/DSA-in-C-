@@ -27,7 +27,7 @@ int partition(int arr[],int low,int high) //parameter function
 
 void quick_sort(int arr[],int low,int high)
 {
-	if(low<high) //base case
+	if(low<high) 
 	{
 		int pindex = partition(arr,low,high); //partition index
 
