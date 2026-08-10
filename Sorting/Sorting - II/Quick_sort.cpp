@@ -1,38 +1,38 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int partition(int arr[],int low,int high)
+int partition(int arr[],int low,int high) //parameter function
 {
-	int pivot = arr[low];
-	int i = low;
-	int j = high;
-	while(i<j)
+	int pivot = arr[low]; //pivot is a random value
+	int i = low; //starting of the array
+	int j = high; //end of the array
+	while(i<j) //condition 
 	{
-		while(arr[i]<=pivot && i<=high-1)
+		while(arr[i]<=pivot && i<=high-1)//moving left side
 		{
 			i++;
 		}
-		while(arr[j]>pivot && j>=low+1)
+		while(arr[j]>pivot && j>=low+1)//moving right side
 		{
 			j--;
 		}
 		if(i<j)
 		{
-			swap(arr[i],arr[j]);
+			swap(arr[i],arr[j]);//swaping elements
 		}
 	}
-	swap(arr[low],arr[j]);
-	return j;
+	swap(arr[low],arr[j]);//swaping first element!!
+	return j; //returning J
 }
 
 void quick_sort(int arr[],int low,int high)
 {
-	if(low<high)
+	if(low<high) //base case
 	{
-		int pindex = partition(arr,low,high);
+		int pindex = partition(arr,low,high); //partition index
 
-		quick_sort(arr,low,pindex-1); 
-		quick_sort(arr,pindex+1,high); 
+		quick_sort(arr,low,pindex-1); //1st half
+		quick_sort(arr,pindex+1,high); //2nd half
 	}
 }
 
