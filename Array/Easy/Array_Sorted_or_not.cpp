@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	int n = 9; //size of an array
-	int arr[n] = {20,34,12,53,65,1,2,8,73}; //elements of an array
+	int arr[n] = {3,4,5,1,2}; //elements of an array
 	string result;
 	for(int i = 1; i < n ; i++) //for each loop(start from 1)
 	{
